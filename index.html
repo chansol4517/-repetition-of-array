@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>자바 필수패턴 - 배열의 반복</title>
+  </head>
+  <body>
+    <script>
+      //forEach와 for of반복문
+      const colors = ["red", "green", "blue"];
+      //console.log(colors[0]);
+      //console.log(colors[1]);
+      //console.log(colors[2]);
+
+      //위 구분을 반복시키기
+      //구조 외우기
+      colors.forEach((data, index) => {
+        //console.log(data)
+        //순서값으로 적용시키고 싶으면 밑에
+        console.log(colors[index]);
+      });
+      /*
+      for (const data of colors) {
+        console.log(data);
+      }
+        */
+      //순서값은 필요없고 간단하게만 뽑아낼 때
+      for (const data of colors) console.log(data);
+      //생략가능
+    </script>
+  </body>
+</html>
